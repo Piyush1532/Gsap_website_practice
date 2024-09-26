@@ -113,9 +113,138 @@ header .left-head nav .button{
 
 
 
+/* Home design start */
+.home{
+    width: 100%;
+    margin-top: 1rem;
+    height: 88vh;
+    padding: 0 2.5rem;
+}
+
+.home .homeimg{
+    background: url(https://images.unsplash.com/photo-1634482896248-7ff20570ab0b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home .homeimg .homeText{
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 65rem;
+color: var(--white-color);
+
+}
+
+.home .homeimg .homeText h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+color: var(--black-color);
+}
+
+.home .homeimg .homeText p{
+    font-size: 1.5rem;
+    margin: 0 10rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+   
+}
+.home .homeimg .homeText a{
+    color: var(--white-color-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid var(--white-color);
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.home .homeimg .homeText a:hover{
+    background: var(--white-color);
+    color: var(--black-color);
+    font-weight: 400;
+}
 
 
+.home  .homeBottom {
+width: 100%;
+position: relative;
+}
+.home  .homeBottom .container{
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    transform: translate(0,-4.5rem);
+    box-shadow: 2px 2px 35px #161c8a3c ;
+    padding: 2.5rem 1rem;
+    width: 88vw;
+margin: 0 auto;
+border-radius: 1.5rem;
+}
 
+.home  .homeBottom .container .box{
+ padding: 0.2rem 1rem;
+ width: 100%;
+ flex: 1 0 120px;   
+}
+
+.home  .homeBottom .container .box:nth-child(1),.home  .homeBottom .container .box:nth-child(2){
+    border-right: 2px solid var(--black-color);
+}
+
+.home  .homeBottom .container .box h5{
+ font-size: 1.3rem;
+ margin-bottom: .5rem;
+}
+
+.home  .homeBottom .container .box p{
+    color: #444;
+    font-size: 1.1rem;
+}
+.home  .homeBottom .container .box a{
+    float: right;
+    padding: 1rem 2rem;
+    color: var(--white-color);
+background: var(--blue-primary);
+border-radius: .5rem;
+font-size: 1.1rem;
+font-weight: 400;
+}
+
+.home  .homeBottom .container .box a:hover{
+    background: #a7abff;
+}
+/* Home design end */
+
+
+/* Contact design start */
+
+.contsection{
+    padding: 12rem;
+    margin-top: 10rem;
+    background: var(--white-color);
+}
+.contsection .contactUs{
+    width: 100%;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 6rem;
+}
+.contsection img{
+    width: 200px;
+}
+/* Contact design end */
 
 
 
@@ -265,12 +394,59 @@ header .left-head nav .button .login-button:hover a{
 header .left-head nav .button .create-button:hover a{
   color: var(--white-color);
 }
+
+.home .homeimg .homeText h1{
+    font-size: 4em;
 }
 
-@media screen and (max-width:480px) {
+.home .homeimg .homeText p{
+    margin-bottom: 3rem;
+}
+
+
+.home .homeimg .homeText p{
+    margin: 0;
+    margin-bottom: 3rem;  
+
+} 
+.home .homeBottom .container{
+    width: 100%;
+}
+
+
+.home .homeBottom .container{
+ transform: translate(0);   
+ margin-top: 4rem;
+
+}
+
+.home .homeBottom .container .box a {
+    float: none;
+}
+
+
+}
+
+@media screen and (max-width:450px) {
     html{
         font-size: 60%;
     }
+
+    .home .homeimg .homeText{
+        padding: 1rem;
+    }
+
+    .home .homeimg .homeText p{
+        margin: 0;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+ .home  .homeBottom .container .box:nth-child(2){
+  border: none;  
+ }
+
+
 }
 
 /*Media Queries End  */
