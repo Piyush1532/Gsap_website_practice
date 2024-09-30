@@ -239,11 +239,90 @@ font-weight: 400;
      justify-content: space-between;
      align-items: center;
      flex-wrap: wrap;
-     gap: 6rem;
+     gap: 4rem;
 }
-.contsection img{
-    width: 200px;
+
+.contsection .contactUs .text,.contsection .contactUs .text .box{
+flex: 1 0 260px;
 }
+
+.contsection .contactUs .text h2{
+    font-size: 4.6rem;
+}
+
+
+.contsection .contactUs .text p{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.contsection .contactUs .text a{
+    font-size: 1.1rem;
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    background: var(--black-color);
+    border-radius: .4rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+
+.contsection .contactUs .text a:hover{
+    transform:translate(0,-.5rem) ;
+    box-shadow: 1px 1px 13px #0000006f ;
+}
+
+.contsection .contactUs  .box{
+    height: 70vh;
+    padding-left: 10rem;
+    position: relative;
+}
+ 
+.contsection .contactUs .box .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 1px 21px 30px -1rem   rgba(0, 66, 148, 0.37);
+}
+ 
+.contsection .contactUs .box .image img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;   
+ object-position: center;
+}
+
+.contsection .contactUs .box .sBox{
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    background: var(--white-color);
+    padding: 2rem;
+    width: 20em;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 45px #0000002d;
+}
+
+.contsection .contactUs .box .sBox h3{
+    font-size: 3rem;
+        color: #31C48D;
+}
+
+
+
+.contsection .contactUs .box .sBox p{
+  font-size: 1.4rem;
+  margin-top: 0.8rem;  
+}
+
+
+.contsection .contactUs .box .sBox:hover{
+    transform: translate(0,-1rem);
+}
+
+
 /* Contact design end */
 
 
@@ -265,6 +344,36 @@ font-weight: 400;
 @media screen and (max-width:960px) {
     html{
         font-size: 70%;
+    }
+
+    .contsection{
+        margin-top: 15rem;
+        padding: 12rem 4rem;
+    }
+
+    .contsection .contactUs{
+     gap: 12rem;   
+    }
+
+    .contsection .contactUs .text h2{
+        font-size: 3.3rem;
+    }
+    .contsection .contactUs .text p{
+        font-size: 1.3rem;
+    }
+
+    .contsection .contactUs .box{
+        padding-left: 0rem;
+     height: 50vh;   
+    }
+    .contsection .contactUs .box .sBox{
+        top: -15%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .contsection .contactUs .box
+    .sBox:hover{
+transform: translate(-50%,-5%);
     }
 }
 
