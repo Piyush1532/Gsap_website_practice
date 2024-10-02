@@ -84,7 +84,8 @@ header .right-header a{
 }
 
 header .right-header a:last-child{
-    background: var(--black-color);
+    /* background: var(--black-color); */
+    background: #31C48D;
     padding: .7rem 1rem;
     font-size: 1.1rem;
     color: var(--white-color);
@@ -98,6 +99,7 @@ header .right-header a:hover{
 header .right-header a:last-child:hover{
     color: var(--white-color);
     background: rgba(85, 85,85);
+    /* background: #CBA299; */
 }
 
 
@@ -325,10 +327,213 @@ flex: 1 0 260px;
 
 /* Contact design end */
 
+/* provided design start */
+
+.convenience{
+    width: 100%;
+    height: 100vh;
+    background: var(--dark-color);
+    padding: 0 8rem;
+}
+.convenience .provided{
+ display: flex;
+ justify-content: space-between;  
+ width: 100%;
+ align-items: center;
+ gap: 10rem;
+ padding: 4rem 0;
+ padding-top: 7rem;
+ flex-wrap: wrap;
+border-bottom:1px solid #bdbcbc ;
+}
+
+.convenience .provided .box{
+    flex: 1 0 200px;
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.convenience .provided .box h2{
+    font-size: 4rem;
+    color: var(--white-color);
+}
+.convenience .provided .box  p{
+    font-size: 1.5rem;
+    color: #bdbcbc;
+    line-height: 1.4;
+}
+
+.convenience .content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 4rem 0;
+    margin-top: 2rem;
+}
+
+.convenience .content .box{
+    flex: 1 0 240px;
+}
+.convenience .content .box  h2{
+    font-size: 3.4rem;
+    color: var(--white-color);
+}
+
+.convenience .content .box p{
+    font-size: 1.3rem;
+    color: #bdbcbc;
+    line-height: 1.9;
+}
+
+.convenience .video{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.convenience .video video{
+    width: 100%;
+    height: 170%;
+    margin-top: -15rem;
+    object-position: center;
+    object-fit: cover;
+}
+/* provided design end */
 
 
 
+/* property design start */
 
+.property{
+    width: 100%;
+    padding: 10rem 8rem;
+    margin-top: 15rem;
+}
+.property .propH{
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+
+}
+
+.property .propH h2{
+font-size: 4rem;
+text-align: center;
+}
+.property .propH p{
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.property .deBox{
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  gap: 4rem;
+}
+
+.property .deBox .box{
+    width: 100%;
+    height: 42rem;
+    background: var(--white-color);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.property .deBox  .box .image{
+    width: 100%;
+    height: 26rem;
+    overflow: hidden;
+}
+
+.property .deBox  .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.property .deBox  .priceName{
+    padding: 2rem;
+    border-bottom: 1px solid #b0b0b04d;
+}
+.property .deBox  .priceName h4{
+ font-size: 2rem;
+ color: #31C48D;
+ margin-bottom: 0.8rem;   
+}
+.property .deBox  .priceName p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.property  .deBox .box .location-detail{
+ padding: 1rem 2rem;
+
+}
+
+.property  .deBox .box .location-detail p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.property  .deBox .box .location-detail p img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.property  .deBox  .location-detail .detail{
+    width: 100%;
+}
+.property  .deBox  .location-detail .detail ul{
+ width: 85%;
+display: flex;
+justify-content: space-between;
+position: absolute;
+bottom: 1rem;
+}
+
+.property  .deBox  .location-detail .detail ul li{
+ list-style: none;   
+ font-weight: 500;
+ font-size: 1.2rem;
+ display: flex;
+}
+
+.property  .deBox  .location-detail .detail ul li img{
+    width: 18px;
+    margin-right: 1rem;
+}
+
+.property  .explore{
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+
+.property .explore a{
+    color: var(--white-color);
+    background:var(--black-color) ;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: .8rem;
+}
+.property .explore a:hover{
+    transform: translate(0,-.7rem);
+    box-shadow: 1px 5px 15px #00000049;
+}
+
+/* property design end */
 
 
 
@@ -338,6 +543,19 @@ flex: 1 0 260px;
     html{
         font-size: 75%;
     }
+.convenience {
+    padding: 2rem 4rem;
+}
+
+.convenience .provided{
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.convenience .content{
+    margin: 0;
+}
+
 }
 
 
@@ -348,7 +566,7 @@ flex: 1 0 260px;
 
     .contsection{
         margin-top: 15rem;
-        padding: 12rem 4rem;
+        padding: 10rem 4rem;
     }
 
     .contsection .contactUs{
@@ -534,6 +752,10 @@ header .left-head nav .button .create-button:hover a{
 }
 
 
+.convenience .video{
+    height: 50vh;
+}
+
 }
 
 @media screen and (max-width:450px) {
@@ -555,6 +777,12 @@ header .left-head nav .button .create-button:hover a{
   border: none;  
  }
 
+ .convenience .content{
+    gap: 2rem;
+ }
+.convenience .video{
+    height: 40vh;
+}
 
 }
 
