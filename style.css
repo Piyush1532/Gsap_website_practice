@@ -537,6 +537,126 @@ bottom: 1rem;
 
 
 
+/* footer design start */
+
+.footer{
+    width: 100%;
+    background: var(--black-color);
+    padding: 3rem 8rem;
+    padding-bottom: 0;
+}
+
+.footer .footerBox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    gap: 9rem;
+    border-bottom: 1px solid #bdbcbc6e;
+    padding: 5rem 0rem;
+}
+
+
+.footer .footerBox .box{
+    width: 100%; 
+}
+
+.footer .footerBox .box .logo{
+    width: 20em;
+    overflow: hidden;
+}
+
+.footer .footerBox .box .logo  img{
+    width: 100%;
+}
+
+.footer .footerBox .box p{
+width: 100%;
+max-width: 17em;
+font-size: 1.5rem;
+color: #bdbcbc;
+line-height: 1.5;
+margin: 2rem 0;
+}
+.footer .footerBox .box .subscribe{
+  width: 100%;  
+}
+
+.footer .footerBox .box .subscribe form{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+    border: 1px solid #bdbcbc6e;
+    overflow: hidden;
+    padding: .3rem;
+}
+ 
+.footer .footerBox .box .subscribe form input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+   text-decoration: none;
+   color: var(--white-color);
+   padding: 0 .8rem;
+   font-size: 1.2rem;
+    
+}
+.footer .footerBox .box .subscribe form button{
+    background-color: var(--blue-primary);
+    border: none;
+    outline: none;
+ color: var(--white-color);
+  padding: 0.53m 2rem;
+  font-size: 1.2rem;
+  border-radius: .4rem;
+  cursor: pointer;
+
+}
+
+.footer .footerBox .box .subscribe form button:hover{
+    background: #a7abff;  
+
+}
+
+.footer .footerBox .box h3{
+    font-size: 1.8rem;
+    color: var(--white-color);
+   margin-bottom: 3rem;
+}
+
+.footer .footerBox .box ul li{
+list-style: none;
+font-size: 1.2rem;
+font-weight: 500;
+margin-top: 1.5rem;
+line-height: 1.4;
+color: #bdbcbc;
+}
+
+.footer .footerBox .box ul li a{
+    color: #bdbcbc;
+}
+.footer .footerBox .box ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer .copyright{
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    color: #bdbcbc;
+    text-align: center;
+
+}
+/* footer design end */
+
+
+
+
+
+
 
 /*Media Queries Start  */
 @media screen and (max-width:1050px) {
@@ -554,6 +674,24 @@ bottom: 1rem;
 
 .convenience .content{
     margin: 0;
+}
+
+.property {
+    padding: 10rem 4rem;
+}
+.property .deBox{
+    gap: 2rem;
+}
+
+.footer .footerBox{
+    grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto ;
+}
+
+.footer .footerBox .box:nth-child(2),
+.footer .footerBox .box:nth-child(3),
+.footer .footerBox .box:nth-child(4){
+    grid-row:2/2 ;
 }
 
 }
@@ -593,6 +731,11 @@ bottom: 1rem;
     .sBox:hover{
 transform: translate(-50%,-5%);
     }
+
+
+    .property .deBox{
+grid-template-columns:fr 1fr ;
+    }
 }
 
 
@@ -627,8 +770,14 @@ height: 100vh;
 z-index: 11;
 background: rgba(0,0,0,0.9);
 backdrop-filter: blur(5px);
+animation: navigation .4s ease-out;
 }
 
+@keyframes navigation {
+    0%{
+transform: translate(0,-90rem);
+    }
+}
 header .left-head nav .close{
     display: block;
     padding: 2rem;
@@ -754,6 +903,25 @@ header .left-head nav .button .create-button:hover a{
 
 .convenience .video{
     height: 50vh;
+}
+
+.property .deBox{
+    grid-template-columns: 1fr;
+}
+
+.footer{
+    padding: 1rem 4rem;
+    padding-bottom: 0;
+}
+
+.footer .footerBox{
+    grid-template-columns: auto;
+    gap: 3rem;
+}
+.footer .footerBox .box:nth-child(2),
+.footer .footerBox .box:nth-child(3),
+.footer .footerBox .box:nth-child(4){
+    grid-row:auto ;
 }
 
 }
