@@ -12,23 +12,17 @@ close.addEventListener("click",function(){
 
 
 //gsap code start 
-let timeLine=gsap.timeline()
-
-
-timeLine.from(".logo img",{
-    opacity:0,
-    duration:0.5,
-    y:-190
-})
 
 
 
 gsap.from(".homeText",{
-duration:1,
-y:400,
-opacity:0
+duration:1.5,
+y:450,
+opacity:0,
 }
 )
+
+
 
 
 
@@ -48,6 +42,8 @@ gsap.from(".contsection .contactUs",{
     }
 })
 
+
+
 gsap.from(".contactUs .text",{
     opacity:0,
     x:400,
@@ -63,19 +59,32 @@ gsap.from(".contactUs .text",{
     }
 })
 
-
-
-gsap.from(".deBox .box",{
+gsap.from(".provided .box",{
     opacity:0,
-    y:200,
     duration:2,
+    y:-120,
+    stagger:0.5,
     scrollTrigger:{
-trigger:".deBox",
-scroller:"body",
+        trigger:".provided .box",
+        scroller:"body",
+        start:"top 90%",
+        end:"top 40%",
+        markers:true,
+        scrub:2,
+    }
+})
 
+
+gsap.from(".property .deBox .box",{
+    opacity:0,
+    y:300,
+    duration:3,
+    stagger:0.5,
+    scrollTrigger:{
+trigger:".deBox .box",
+scroller:"body",
 start:"top 80%",
 end:"top 90%",
 scrub:2,
-
     }
 })
